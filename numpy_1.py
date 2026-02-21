@@ -1,13 +1,10 @@
 import numpy as np
 
-print(np.__file__)
+print(f"path: {np.__file__}")
 
 """ create an arrays """
-arr = np.array([10, 20, 30, 40])   # create array
-print(arr)
-print(type(arr))
-
-""" zeros, ones, empty, arange, linspace, full """
+# zeros, ones, empty, arange, linspace, full, eye, rand, asarray, dtype, zeros_like, ones_like
+arr = np.array([10, 20, 30, 40])
 zeros = np.zeros(5)
 zeros2 = np.zeros((3, 4))
 ones = np.ones(4)
@@ -29,6 +26,8 @@ x = np.array([[1,2,3],[4,5,6]])
 zeros_like = np.zeros_like(x)
 ones_like = np.ones_like(x)
 
+print(f"arr: {arr}")
+print(f"arrtype: {type(arr)}")
 print(f"zeroes: {zeros}")
 print(f"zeroes2: {zeros2}")
 print(f"ones: {ones}")
@@ -58,3 +57,8 @@ print(arr2.ndim) # number of dimensions
 print(arr2.shape) # structure of the array
 print(arr2.size)  # total numbers of element
 print(arr2.dtype)  # data types of elemet
+
+a = np.array([1,2,3])
+b = np.array([4,5,6])
+c = a + b
+print(c) # [5 7 9]
