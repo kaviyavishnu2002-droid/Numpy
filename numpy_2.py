@@ -23,6 +23,7 @@ print(a[1])  # get one full row
 print(a[:, 2])  # get one full column
 
 # slicing
+print("slicing"+ "-"*10)
 print(a[0:2])  # slice row
 print(a[:, 1:3])  #slice column
 print(a[0:2, 1:3])  # slice row and column

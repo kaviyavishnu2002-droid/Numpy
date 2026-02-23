@@ -5,46 +5,57 @@ print(f"path: {np.__file__}")
 """ create an arrays """
 # zeros, ones, empty, arange, linspace, full, eye, rand, asarray, dtype, zeros_like, ones_like
 arr = np.array([10, 20, 30, 40])
-zeros = np.zeros(5)
-zeros2 = np.zeros((3, 4))
-ones = np.ones(4)
-ones2 = np.ones((2, 3))
-empty = np.empty(5)  # Never use values from empty() before assigning your own data.
-arange = np.arange(0, 10)  # np.arange(start, stop, step)
-arange2 = np.arange(0, 10, 2)
-arange3 = np.arange(0, 1, 0.2)
-linspace = np.linspace(0, 10, 8)  # np.linspace(start, stop, num)
-full = np.full((2, 3), 7)  # only 7
-eye = np.eye(3)
-rand = np.random.rand(3)
-rand2 = np.random.rand(2, 3)
-randint = np.random.randint(1, 10, size=(2, 3))  # Random integers
-lst = [10, 20, 30]
-asarray = np.asarray(lst)
-dtype = np.array([1, 2, 3], dtype=float)
-x = np.array([[1,2,3],[4,5,6]])
-zeros_like = np.zeros_like(x)
-ones_like = np.ones_like(x)
-
 print(f"arr: {arr}")
 print(f"arrtype: {type(arr)}")
+
+zeros = np.zeros(5)
 print(f"zeroes: {zeros}")
+
+zeros2 = np.zeros((3, 4))
 print(f"zeroes2: {zeros2}")
+
+ones = np.ones(4)
 print(f"ones: {ones}")
+
+ones2 = np.ones((2, 3))
 print(f"ones2: {ones2}")
+
+empty = np.empty(5)  # Never use values from empty() before assigning your own data.
 print(f"empty: {empty}")
+
+arange = np.arange(0, 10, 2)  # np.arange(start, stop, step)
 print(f"arange: {arange}")
-print(f"arange2: {arange2}")
-print(f"arange3: {arange3}")
+
+linspace = np.linspace(0, 10, 8)  # np.linspace(start, stop, num)
 print(f"linspace: {linspace}")
+
+full = np.full((2, 3), 7)  # only 7
 print(f"full: {full}")
+
+eye = np.eye(3)
 print(f"eye: {eye}")
+
+rand = np.random.rand(3)
 print(f"rand: {rand}")
+
+rand2 = np.random.rand(2, 3)
 print(f"rand2 {rand2}")
+
+randint = np.random.randint(1, 10, size=(2, 3))  # Random integers
 print(f"randint: {randint}")
+
+lst = [10, 20, 30]
+asarray = np.asarray(lst)
 print(f"asarray: {asarray}")
+
+dtype = np.array([1, 2, 3], dtype=float)
 print(f"dtype: {dtype}")
+
+x = np.array([[1,2,3],[4,5,6]])
+zeros_like = np.zeros_like(x)   # change into zeros
 print(f"zeros_like: {zeros_like}")
+
+ones_like = np.ones_like(x)   # change into ones
 print(f"ones_like: {ones_like}")
 
 
